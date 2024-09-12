@@ -1,0 +1,25 @@
+name: AWS login
+description: store AAD token in an AWS web-identity token-file
+inputs:
+  client-id:
+    description: AAD client-id representing your GitHub Action
+    required: true
+  audience:
+    description: AAD audience representing your AWS web-identity role
+    required: true
+  arn:
+    description: AWS arn of your AWS web-identity role
+    required: true
+  tenant:
+    description: AAD tenant (defaults to tenant and normally does not need to be changed)
+    required: false
+    default: smarthubiq.onmicrosoft.com
+  token-exchange-audience:
+    description: audience for the AAD token exchange (does not need to be changed unless you have overwritten the default on AAD side)
+    required: false
+    default: api://AzureADTokenExchange
+
+runs:
+  using: 'node16'
+  main: 'main.js'
+  post: 'post.js'

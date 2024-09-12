@@ -1,0 +1,18 @@
+{
+  "name": "aws-actions",
+  "version": "1.0.0",
+  "description": "Login actions for AWS",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [
+    "AWS",
+    "AAD",
+    "GitHub",
+    "OAuth2.0",
+    "OIDC",
+    "Web-Identity",
+    "Github Actions"
+  ],
+  "author": "Joachim Keltsch, Imran Hussain",
+  "license": "ISL"
+}
